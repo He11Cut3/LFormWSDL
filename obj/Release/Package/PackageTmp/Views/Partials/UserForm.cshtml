@@ -1,0 +1,26 @@
+﻿@model CustomerInfoResponse
+
+@using LForm.Dto
+
+
+
+<div class="table-content table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Фамилия</th>
+                <th>Почта</th>
+                <th>ID - города</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.FirstName</td>
+                <td>@Model.LastName</td>
+                <td>@Model.Email</td>
+                <td>@Model.CountryID</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
